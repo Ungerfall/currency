@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="Ungerfall.Currency.Presentation.WebApi.Tests" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ungerfall.currency.application\Ungerfall.Currency.Application.csproj" />
+    </ItemGroup>
+
+</Project>
